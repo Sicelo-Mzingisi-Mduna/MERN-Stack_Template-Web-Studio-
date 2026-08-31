@@ -15,16 +15,6 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  role:{ // authorization
-    type: String, enum: ["job_seeker", "employer"], required: true
-  },
-  avatar: String,
-  resume: String,
-
-  // Additional fields for employer
-  companyName: String,
-  companyDescription: String,
-  companyLogo: String,
 }, { timestamps: true });
 
 // Encrypt password before saving

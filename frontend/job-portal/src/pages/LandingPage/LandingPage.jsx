@@ -1,28 +1,21 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 // import MotionScroll from '../../components/animations/MotionScroll'
-import NavBar_LandingPage from '../LandingPage/components/NavBar_LandingPage'
-import HeroSection_LandingPage from '../LandingPage/components/HeroSection_LandingPage'
-import InfoSection_LandingPage from '../LandingPage/components/InfoSection_LandingPage'
-import Analytics_LandingPage from '../LandingPage/components/Analytics_LandingPage'
-import Footer_LandingPage from '../LandingPage/components/Footer_LandingPage'
+import NavBar from './components/NavBar'
+import HeroSection from './components/HeroSection'
+import Footer from './components/Footer'
 import { useAuth } from '../../context/AuthContext'
 
 const LandingPage = () => {
   const {user, isAuthenticated} = useAuth();
   return (
     <>
-    <NavBar_LandingPage />
-    {/* <MotionScroll className="LoginRoot"> */}
+    <NavBar />
 
-    <HeroSection_LandingPage />
+    <HeroSection />
+    
+    <Footer/>
 
-    <InfoSection_LandingPage/>
-
-    <Analytics_LandingPage/>
-
-    <Footer_LandingPage/>
-    {/* </MotionScroll> */}
     </>
   )
 }
