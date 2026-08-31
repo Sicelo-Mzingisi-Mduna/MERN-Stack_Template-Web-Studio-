@@ -1,0 +1,461 @@
+@layer presets {
+	.NavBarRoot {
+    display: grid;
+    min-height: 100%;
+    font-family: Arial, Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 0;
+    white-space: pre-wrap;
+    white-space-collapse: preserve
+  }
+  
+}
+
+@media all {
+
+	.w-built-by-sicelo-link {
+    display: inline-flex;
+    row-gap: 6px;
+    column-gap: 6px;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 6px;
+    padding-right: 10px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    right: 1px;
+    bottom: 1px;
+    color: rgba(251, 252, 253, 1);
+    font-family: emoji, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+    text-decoration-line: none;
+    border: 1px solid transparent;
+    white-space: nowrap
+  }
+  .w-github-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--size-6)
+  }
+  .w-built-by-sicelo-text-wrapper {
+    border-top-color: black;
+    border-right-color: black;
+    border-bottom-color: black;
+    border-left-color: black;
+    color: black
+  }
+  .w-built-by-sicelo-text {
+    font-size: 12px;
+    letter-spacing: 0.5px
+  }
+  .w-navbar-container {
+    color: white;
+    border-top-left-radius: var(--radius-3);
+    border-top-right-radius: var(--radius-3);
+    border-bottom-left-radius: var(--radius-3);
+    border-bottom-right-radius: var(--radius-3);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: ghostwhite;
+    flex-wrap: nowrap;
+    box-shadow: var(--shadow-4);
+    margin-left: var(--size-2);
+    margin-right: var(--size-2);
+    border: var(--border-size-1) solid lightblue;
+    padding: var(--size-1)
+  }
+  .w-left-wrapper {
+    border-top-left-radius: var(--radius-2);
+    border-top-right-radius: var(--radius-2);
+    border-bottom-left-radius: var(--radius-2);
+    border-bottom-right-radius: var(--radius-2);
+    box-shadow: var(--shadow-3);
+    display: flex;
+    border: var(--border-size-1) none lightblue
+  }
+  .w-left-wrapper:hover {
+    background-image: var(--gradient-9);
+    background-size: auto auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    background-color: whitesmoke;
+    background-position: 0% 0%
+  }
+  .w-nav-bar-home-link {
+    display: flex;
+    column-gap: var(--gap-xs);
+    row-gap: var(--gap-xs);
+    text-decoration-line: none;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-top-left-radius: var(--radius-2);
+    border-top-right-radius: var(--radius-2);
+    border-bottom-left-radius: var(--radius-2);
+    border-bottom-right-radius: var(--radius-2);
+    border-top-width: 0px;
+    border-right-width: var(--border-size-1);
+    border-left-width: var(--border-size-1);
+    border-bottom-width: 0px;
+    box-shadow: var(--shadow-4), var(--inner-shadow-highlight);
+    background-color: white;
+    padding: var(--size-1)
+  }
+  .w-nav-bar-home-link:hover {
+    background-image: var(--gradient-9);
+    background-size: auto auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    background-position: 0% 0%
+  }
+  .w-nav-bar-home-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  .w-nav-bar-home-text {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052, Sylfaen, serif;
+    text-decoration-line: none;
+    color: black;
+    font-weight: 600;
+    text-overflow: clip;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    letter-spacing: 0.5px;
+    white-space: pre-line;
+    white-space-collapse: preserve-breaks
+  }
+  .w-nav-bar-home-text:hover {
+    text-decoration-line: underline;
+    color: mediumblue
+  }
+  .w-center-wrapper {
+    display: flex;
+    column-gap: var(--gap-xs);
+    row-gap: var(--gap-xs);
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px
+  }
+  .w-left-wrapper-1 {
+    border-top-left-radius: var(--radius-2);
+    border-top-right-radius: var(--radius-2);
+    border-bottom-left-radius: var(--radius-2);
+    border-bottom-right-radius: var(--radius-2);
+    box-shadow: var(--shadow-3);
+    border: var(--border-size-1) solid lightblue
+  }
+  .w-left-wrapper-1:hover {
+    background-color: whitesmoke;
+    background-image: var(--gradient-9);
+    background-size: auto auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    background-position: 0% 0%
+  }
+  .w-nav-bar-find-jobs-link {
+    display: flex;
+    column-gap: var(--gap-xs);
+    row-gap: var(--gap-xs);
+    text-decoration-line: none;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-top-width: 0px;
+    border-right-width: var(--border-size-1);
+    border-left-width: var(--border-size-1);
+    border-bottom-width: 0px;
+    border-top-left-radius: var(--radius-2);
+    border-top-right-radius: var(--radius-2);
+    border-bottom-left-radius: var(--radius-2);
+    border-bottom-right-radius: var(--radius-2);
+    box-shadow: var(--shadow-4), var(--inner-shadow-highlight);
+    background-color: white;
+    padding: var(--size-1)
+  }
+  .w-nav-bar-find-jobs-link:hover {
+    background-image: var(--gradient-9);
+    background-size: auto auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    background-position: 0% 0%
+  }
+  .w-nav-bar-find-jobs-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  .w-nav-bar-find-jobs-text {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052, Sylfaen, serif;
+    text-decoration-line: none;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 0.5px
+  }
+  .w-nav-bar-find-jobs-text:hover {
+    text-decoration-line: underline;
+    color: mediumblue
+  }
+  .w-right-wrapper {
+    border-top-left-radius: var(--radius-2);
+    border-top-right-radius: var(--radius-2);
+    border-bottom-left-radius: var(--radius-2);
+    border-bottom-right-radius: var(--radius-2);
+    box-shadow: var(--shadow-3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--border-size-1) solid lightblue
+  }
+  .w-right-wrapper:hover {
+    background-color: whitesmoke;
+    background-image: var(--gradient-9);
+    background-size: auto auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    background-position: 0% 0%
+  }
+  .w-nav-bar-home-link-1 {
+    display: flex;
+    column-gap: var(--gap-xs);
+    row-gap: var(--gap-xs);
+    text-decoration-line: none;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-top-width: 0px;
+    border-right-width: var(--border-size-1);
+    border-left-width: var(--border-size-1);
+    border-bottom-width: 0px;
+    border-top-left-radius: var(--radius-2);
+    border-top-right-radius: var(--radius-2);
+    border-bottom-left-radius: var(--radius-2);
+    border-bottom-right-radius: var(--radius-2);
+    box-shadow: var(--shadow-4), var(--inner-shadow-highlight);
+    background-color: white;
+    padding: var(--size-1)
+  }
+  .w-nav-bar-home-link-1:hover {
+    background-image: var(--gradient-9);
+    background-size: auto auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    background-position: 0% 0%
+  }
+  .w-nav-bar-home-icon-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  .w-nav-bar-home-text-1 {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052, Sylfaen, serif;
+    text-decoration-line: none;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 0.5px
+  }
+  .w-nav-bar-home-text-1:hover {
+    text-decoration-line: underline;
+    color: mediumblue
+  }
+  .w-right-wrapper-1 {
+    display: flex;
+    column-gap: var(--gap-xs);
+    row-gap: var(--gap-xs)
+  }
+  .w-left-wrapper-2 {
+    border-top-left-radius: var(--radius-2);
+    border-top-right-radius: var(--radius-2);
+    border-bottom-left-radius: var(--radius-2);
+    border-bottom-right-radius: var(--radius-2);
+    box-shadow: var(--shadow-3);
+    border: var(--border-size-1) solid lightblue
+  }
+  .w-left-wrapper-2:hover {
+    background-color: whitesmoke;
+    background-image: var(--gradient-9);
+    background-size: auto auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    background-position: 0% 0%
+  }
+  .w-nav-bar-home-link-2 {
+    display: flex;
+    column-gap: var(--gap-xs);
+    row-gap: var(--gap-xs);
+    text-decoration-line: none;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-top-width: 0px;
+    border-right-width: var(--border-size-1);
+    border-left-width: var(--border-size-1);
+    border-bottom-width: 0px;
+    border-top-left-radius: var(--radius-2);
+    border-top-right-radius: var(--radius-2);
+    border-bottom-left-radius: var(--radius-2);
+    border-bottom-right-radius: var(--radius-2);
+    background-color: white;
+    box-shadow: var(--shadow-4), var(--inner-shadow-highlight);
+    padding: var(--size-1)
+  }
+  .w-nav-bar-home-link-2:hover {
+    background-image: var(--gradient-9);
+    background-size: auto auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    background-position: 0% 0%
+  }
+  .w-nav-bar-home-icon-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  .w-nav-bar-home-text-2 {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052, Sylfaen, serif;
+    text-decoration-line: none;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 0.5px
+  }
+  .w-nav-bar-home-text-2:hover {
+    text-decoration-line: underline;
+    color: mediumblue
+  }
+  .w-right-wrapper-2 {
+    border-top-left-radius: var(--radius-2);
+    border-top-right-radius: var(--radius-2);
+    border-bottom-left-radius: var(--radius-2);
+    border-bottom-right-radius: var(--radius-2);
+    box-shadow: var(--shadow-3);
+    border: var(--border-size-1) solid lightblue
+  }
+  .w-right-wrapper-2:hover {
+    background-color: whitesmoke;
+    background-image: var(--gradient-9);
+    background-size: auto auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    background-position: 0% 0%
+  }
+  .w-nav-bar-home-link-3 {
+    display: flex;
+    column-gap: var(--gap-xs);
+    row-gap: var(--gap-xs);
+    text-decoration-line: none;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-top-width: 0px;
+    border-right-width: var(--border-size-1);
+    border-left-width: var(--border-size-1);
+    border-bottom-width: 0px;
+    border-top-left-radius: var(--radius-2);
+    border-top-right-radius: var(--radius-2);
+    border-bottom-left-radius: var(--radius-2);
+    border-bottom-right-radius: var(--radius-2);
+    background-color: white;
+    box-shadow: var(--shadow-4), var(--inner-shadow-highlight);
+    padding: var(--size-1)
+  }
+  .w-nav-bar-home-link-3:hover {
+    background-image: var(--gradient-9);
+    background-size: auto auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    background-position: 0% 0%
+  }
+  .w-nav-bar-home-icon-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  .w-nav-bar-home-text-3 {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052, Sylfaen, serif;
+    text-decoration-line: none;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 0.5px
+  }
+  .w-nav-bar-home-text-3:hover {
+    text-decoration-line: underline;
+    color: mediumblue
+  }
+  
+ }
